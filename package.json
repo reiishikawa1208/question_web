@@ -14,6 +14,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "cross-env": "^5.2.0",
     "nuxt": "^2.4.0",
+    "nuxt-clipboard2": "^0.2.1",
     "vue-scrollin": "^0.1.2",
     "vuetify": "^1.5.5",
     "vuetify-loader": "^1.2.1"

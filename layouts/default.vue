@@ -42,7 +42,7 @@ export default {
                 title: 'ブログページ',
                 to: 'https://rayy-blog.com'
             }],
-            title: 'Question'
+            title: 'Welcome Question'
         }
     }
 }
