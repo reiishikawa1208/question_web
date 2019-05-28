@@ -3,7 +3,7 @@
     <Head />
 
     <v-container>
-      <Operate :page="page" v-on:get_questions="get_questions" />
+      <Operate :page="page" v-on:get_questions="get_questions"/>
       <Content :questions="questions" />
     </v-container>
   </div>
@@ -20,13 +20,14 @@
     data() {
       return {
           questions: null,
-          page: 1
+          page: 1,
+          words: ''
       }
     },
     methods: {
-      get_questions: function(page) {
+      get_questions: function(page, words) {
         axios
-          .get("http://192.168.8.102:3001/questions", {params: {'page': page}})
+          .get("http://10.0.0.2:3001/questions", {params: {'page': page, 'words': words}})
           .then(response => {
             this.questions = response.data.result;
             this.page = response.data.pages;
@@ -34,7 +35,7 @@
       }
     },
     mounted() {
-      this.get_questions('1')
+      this.get_questions(this.page,this.words)
     }
 }
 </script>

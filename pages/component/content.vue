@@ -14,12 +14,12 @@
           <div slot="header">{{ question.title }}</div>
           <v-card>
             <v-card-text class="blue lighten-5">
-              {{ question.content }}
+              <p class="question_content">{{ question.content }}</p>
             </v-card-text>
             <v-divider></v-divider>
             <v-card-text class="blue lighten-5" v-for="comment in question.comments" v-bind:key="comment.content">
               <v-icon>question_answer</v-icon>
-              {{ comment.content }}
+              <p class="question_comment">{{ comment.content }}</p>
             </v-card-text>
           </v-card>
         </v-expansion-panel-content>
@@ -35,3 +35,13 @@
     })
   }
 </script>
+
+<style>
+  .question_content {
+    white-space:pre-wrap;
+  }
+  .question_comment {
+    white-space:pre-wrap;
+  }
+
+</style>

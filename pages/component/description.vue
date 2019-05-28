@@ -7,6 +7,13 @@
     </v-btn>
     <v-card>
       <v-card-text>
+        <div class="text-xs-center">
+          <video width="50%" controls preload="metadata">
+            <source src='~static/Welcome_Question_for_des.mp4' type="video/mp4">
+          </video>
+        </div>
+      </v-card-text>
+      <v-card-text>
         <p>このサイトは、エンジニアの為の質問サイトです。勉強や仕事で「わからないことを聞ける人がいない」という方の役に立てればと思い作成しました。全てのご質問にRAYが回答します。（<a href="https://rayy-blog.com/profile/" target="_blank">RAYのプロフィールはこちら</a>)</p>
         <h3>※注意点</h3>
         <ul>
