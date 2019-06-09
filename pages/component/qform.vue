@@ -40,7 +40,7 @@ export default {
       submit: function() {
         if(this.$refs.form.validate()){
           this.loading = true;
-          axios.post('http://10.0.0.2:3001/questions', {title: this.title, content: this.content})
+          axios.post('http://140.227.202.89:3001/questions', {title: this.title, content: this.content})
           .then((res) => {
             this.loading = false;
             this.title   = '';

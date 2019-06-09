@@ -27,7 +27,7 @@
     methods: {
       get_questions: function(page, words) {
         axios
-          .get("http://10.0.0.2:3001/questions", {params: {'page': page, 'words': words}})
+          .get("http://140.227.202.89:3001/questions", {params: {'page': page, 'words': words}})
           .then(response => {
             this.questions = response.data.result;
             this.page = response.data.pages;

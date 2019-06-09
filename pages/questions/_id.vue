@@ -33,7 +33,7 @@
     methods: {
       get_questions: function(id) {
         axios
-          .get("http://10.0.0.2:3001/questions/" + id)
+          .get("http://140.227.202.89:3001/questions/" + id)
           .then(response => {
             this.questions = response.data;
           })
